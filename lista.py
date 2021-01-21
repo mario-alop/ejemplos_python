@@ -1,0 +1,50 @@
+print()
+print('Operaciones con Listas: ')
+print()
+lista = [12, 23, 5, 29, 92, 64]
+print(lista)
+print()
+print('Mueve el segundo elemento a la última posición: ')
+print()
+lista.append(lista[1])
+lista.pop(1)
+print(lista)
+print()
+print('Añade el número 14 al comienzo de la lista: ')
+print()
+lista.insert(0, 14)
+print(lista)
+print()
+print('Suma todos los números de la lista y añade el resultado al final de la lista: ')
+aux = 0
+for i in lista:
+    aux += i
+print(aux)
+lista.append(aux)
+print()
+print(lista)
+print()
+print('Fusiona la lista actual con la siguiente: [4, 11, 32]: ')
+lista2 = [4, 11, 32]
+lista.extend(lista2)
+print()
+print(lista)
+print()
+print('Elimina todos los números impares de la lista: ')
+lista_aux = []
+for i in lista:
+    if i % 2 == 0:
+        lista_aux.append(i)
+lista = lista_aux
+print()
+print(lista)
+print()
+print('Ordena los números de la lista de forma ascendente: ')
+lista.sort()
+print()
+print(lista)
+print()
+print('Vacía la lista: ')
+print()
+lista.clear()
+print(lista)
